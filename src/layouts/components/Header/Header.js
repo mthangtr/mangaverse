@@ -6,6 +6,7 @@ import images from '@/assets/images';
 import Tippy from '@tippyjs/react';
 import { Wrapper as PopperWrapper } from '@/components/Popper';
 import Button from '@/components/Button';
+import Search from '../Search';
 
 const cx = classNames.bind(styles);
 
@@ -69,7 +70,7 @@ function Header() {
                                 </Tippy>
                             </li>
                             <li>
-                                <Button>Following</Button>
+                                <Button>Bookmark</Button>
                             </li>
                             <li>
                                 <Button>History</Button>
@@ -77,10 +78,7 @@ function Header() {
                         </ul>
                     </nav>
                 </div>
-                <div className={cx('search')}>
-                    <input type="text" placeholder="Search" />
-                    <Button>Search</Button>
-                </div>
+                <Search />
                 <div className={cx('login')}>
                     <Button>Log In</Button>
                     <Button>Sign Up</Button>

@@ -1,8 +1,16 @@
 .wrapper {
+    height: 60px;
     padding: 9px 16px;
     border-radius: 4px;
     font-size: 1.6rem;
     font-weight: 700;
+    cursor: pointer;
+    border: none;
+    background: none; // Removes background
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
 }
 
 .icon + .title,
@@ -17,12 +25,15 @@
 }
 
 .menu-item {
+    height: 30px;
     border-radius: 4px;
     font-weight: 500;
     min-width: 116.5px;
+    align-items: center;
+    display: flex;
 
     &:hover {
-        background-color: var(--gray-100);
+        background-color: rgba(22, 24, 35, 0.03);
     }
 
     .title {

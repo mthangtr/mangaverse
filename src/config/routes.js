@@ -1,8 +1,6 @@
-import Category from "@/pages/Category";
-
 const routes = {
     home: '/',
-    following: '/following',
+    Bookmark: '/Bookmark',
     profile: '/@:nickname',
     search: '/search',
     category: '/category',
