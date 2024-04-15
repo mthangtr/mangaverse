@@ -1,0 +1,31 @@
+.wrapper {
+    padding: 9px 16px;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.icon + .title,
+.title + .icon {
+    margin-left: 8px;
+}
+
+.icon {
+    display: inline-block;
+    width: 24px;
+    text-align: center;
+}
+
+.menu-item {
+    border-radius: 4px;
+    font-weight: 500;
+    min-width: 116.5px;
+
+    &:hover {
+        background-color: var(--gray-100);
+    }
+
+    .title {
+        font-size: small;
+    }
+}

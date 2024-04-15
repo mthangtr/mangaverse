@@ -1,7 +1,7 @@
 import Category from "@/pages/Category";
 
 const routes = {
-    home: '/home',
+    home: '/',
     following: '/following',
     profile: '/@:nickname',
     search: '/search',
