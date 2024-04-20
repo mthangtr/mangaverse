@@ -7,6 +7,8 @@ import Tippy from '@tippyjs/react';
 import { Wrapper as PopperWrapper } from '@/components/Popper';
 import Button from '@/components/Button';
 import Search from '../Search';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 const cx = classNames.bind(styles);
 
@@ -66,7 +68,7 @@ function Header() {
                                         </div>
                                     }
                                 >
-                                    <Button>Category</Button>
+                                    <Button rightIcon={<FontAwesomeIcon icon={faChevronDown} />}>Category</Button>
                                 </Tippy>
                             </li>
                             <li>

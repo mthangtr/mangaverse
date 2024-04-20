@@ -1,0 +1,46 @@
+.cardContainer {
+    flex: 0 0 auto; // Cho phép các card tự co giãn nhưng không vượt quá kích thước container
+    padding: 1.5rem;
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin: 1rem;
+    transition: transform 0.3s ease;
+    width: 100%; // Chuyển sang sử dụng phần trăm để responsive
+    max-width: 240px; // Giới hạn chiều rộng tối đa
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    img {
+        height: 300px;
+        width: 1100px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    h3 {
+        font-size: medium;
+        font-weight: 500;
+        margin-top: 0.5rem;
+        color: #333;
+        overflow: hidden; /* Ngăn văn bản tràn ra ngoài container */
+        white-space: nowrap; /* Không cho văn bản xuống dòng mới */
+        text-overflow: ellipsis; /* Thêm dấu "..." nếu văn bản tràn ra ngoài */
+        width: 100%; /* Đặt chiều rộng cụ thể để thuộc tính ellipsis có thể hoạt động */
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap; // Cho phép items bên trong list ngắt dòng
+
+        li {
+            margin-top: 0.25rem;
+            color: #666;
+            margin-right: 0.5rem; // Thêm khoảng cách giữa các category
+        }
+    }
+}
