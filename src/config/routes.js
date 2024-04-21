@@ -6,6 +6,7 @@ const routes = {
     category: '/category',
     history: '/history',
     detail: '/detail',
+    view: '/view',
 };
 
 export default routes;

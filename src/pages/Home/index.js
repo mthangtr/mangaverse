@@ -3,6 +3,7 @@ import styles from './Home.module.scss';
 import Carousel from '@/components/Carousel';
 import { useState } from 'react';
 import CardItem from '@/components/CardItem';
+import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
@@ -43,126 +44,126 @@ function Home() {
 
     const [manga, setManga] = useState([
         {
-            id: 1,
+            id: 6,
             title: "One Piece",
             image: "https://cdn.myanimelist.net/images/anime/1770/97704.jpg",
             rating: 9.2,
             chapter: ["Chapter 1010", "Chapter 1009", "Chapter 1008", "Chapter 1007", "Chapter 1006"]
         },
         {
-            id: 2,
+            id: 7,
             title: "Attack on Titan",
             image: "https://cdn.myanimelist.net/images/anime/10/47347.jpg",
             rating: 9.2,
             chapter: ["Chapter 139", "Chapter 138", "Chapter 137", "Chapter 136", "Chapter 135"]
         },
         {
-            id: 3,
+            id: 8,
             title: "Naruto",
             image: "https://cdn.myanimelist.net/images/anime/1565/111305.jpg",
             rating: 9.2,
             chapter: ["Chapter 700", "Chapter 699", "Chapter 698", "Chapter 697", "Chapter 696"]
         },
         {
-            id: 4,
+            id: 9,
             title: "One Punch Man",
             image: "https://cdn.myanimelist.net/images/anime/1247/122044.jpg",
             rating: 9.2,
             chapter: ["Chapter 141", "Chapter 140", "Chapter 139", "Chapter 138", "Chapter 137"]
         },
         {
-            id: 5,
+            id: 10,
             title: "My Hero Academia",
             image: "https://cdn.myanimelist.net/images/anime/10/78745.jpg",
             rating: 9.2,
             chapter: ["Chapter 311", "Chapter 310", "Chapter 309", "Chapter 308", "Chapter 307"]
         },
         {
-            id: 6,
+            id: 11,
             title: "Berserk",
             image: "https://cdn.myanimelist.net/images/manga/1/157897.jpg",
             rating: 9.2,
             chapter: ["Chapter 364", "Chapter 363", "Chapter 362", "Chapter 361", "Chapter 360"]
         },
         {
-            id: 6,
+            id: 12,
             title: "Berserk",
             image: "https://cdn.myanimelist.net/images/manga/1/157897.jpg",
             rating: 9.2,
             chapter: ["Chapter 364", "Chapter 363", "Chapter 362", "Chapter 361", "Chapter 360"]
         },
         {
-            id: 6,
+            id: 13,
             title: "Berserk",
             image: "https://cdn.myanimelist.net/images/manga/1/157897.jpg",
             rating: 9.2,
             chapter: ["Chapter 364", "Chapter 363", "Chapter 362", "Chapter 361", "Chapter 360"]
         },
         {
-            id: 6,
+            id: 14,
             title: "Berserk",
             image: "https://cdn.myanimelist.net/images/manga/1/157897.jpg",
             rating: 9.2,
             chapter: ["Chapter 364", "Chapter 363", "Chapter 362", "Chapter 361", "Chapter 360"]
         },
         {
-            id: 6,
+            id: 15,
             title: "Berserk",
             image: "https://cdn.myanimelist.net/images/manga/1/157897.jpg",
             rating: 9.2,
             chapter: ["Chapter 364", "Chapter 363", "Chapter 362", "Chapter 361", "Chapter 360"]
         },
         {
-            id: 5,
+            id: 16,
             title: "My Hero Academia",
             image: "https://cdn.myanimelist.net/images/anime/10/78745.jpg",
             rating: 9.2,
             chapter: ["Chapter 311", "Chapter 310", "Chapter 309", "Chapter 308", "Chapter 307"]
         },
         {
-            id: 5,
+            id: 17,
             title: "My Hero Academia",
             image: "https://cdn.myanimelist.net/images/anime/10/78745.jpg",
             rating: 9.2,
             chapter: ["Chapter 311", "Chapter 310", "Chapter 309", "Chapter 308", "Chapter 307"]
         },
         {
-            id: 5,
+            id: 18,
             title: "My Hero Academia",
             image: "https://cdn.myanimelist.net/images/anime/10/78745.jpg",
             rating: 9.2,
             chapter: ["Chapter 311", "Chapter 310", "Chapter 309", "Chapter 308", "Chapter 307"]
         },
         {
-            id: 5,
+            id: 19,
             title: "My Hero Academia",
             image: "https://cdn.myanimelist.net/images/anime/10/78745.jpg",
             rating: 9.2,
             chapter: ["Chapter 311", "Chapter 310", "Chapter 309", "Chapter 308", "Chapter 307"]
         },
         {
-            id: 5,
+            id: 20,
             title: "My Hero Academia",
             image: "https://cdn.myanimelist.net/images/anime/10/78745.jpg",
             rating: 9.2,
             chapter: ["Chapter 311", "Chapter 310", "Chapter 309", "Chapter 308", "Chapter 307"]
         },
         {
-            id: 5,
+            id: 21,
             title: "My Hero Academia",
             image: "https://cdn.myanimelist.net/images/anime/10/78745.jpg",
             rating: 9.2,
             chapter: ["Chapter 311", "Chapter 310", "Chapter 309", "Chapter 308", "Chapter 307"]
         },
         {
-            id: 5,
+            id: 22,
             title: "My Hero Academia",
             image: "https://cdn.myanimelist.net/images/anime/10/78745.jpg",
             rating: 9.2,
             chapter: ["Chapter 311", "Chapter 310", "Chapter 309", "Chapter 308", "Chapter 307"]
         },
         {
-            id: 5,
+            id: 23,
             title: "My Hero Academia",
             image: "https://cdn.myanimelist.net/images/anime/10/78745.jpg",
             rating: 9.2,

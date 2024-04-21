@@ -8,6 +8,7 @@ import Category from '@/pages/Category';
 import Search from '@/pages/Search';
 import History from '@/pages/History';
 import Details from '@/pages/Details';
+import View from '@/pages/View';
 
 // Public routes
 const publicRoutes = [
@@ -18,6 +19,7 @@ const publicRoutes = [
     { path: config.routes.history, component: History },
     { path: config.routes.search, component: Search },
     { path: config.routes.detail, component: Details },
+    { path: config.routes.view, component: View },
 ];
 
 const privateRoutes = [];

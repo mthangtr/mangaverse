@@ -7,21 +7,27 @@ import { faCommentAlt } from "@fortawesome/free-solid-svg-icons";
 
 const cx = classNames.bind(styles);
 
-function CommentSection() {
-    const [comments, setComments] = useState([
-        {
-            id: 1,
-            content: "This is a comment",
-            author: "John Doe",
+function CommentSection({ comment }) {
+    const [comments, setComments] = useState(comment);
+
+    const [newComment, setNewComment] = useState("");
+
+    const handleCommentChange = (e) => {
+        setNewComment(e.target.value)
+    }
+
+    const handlePostComment = () => {
+        const newId = comments.length + 1;
+        const newCommentObj = {
+            id: newId,
+            content: newComment,
+            author: "New Author",
             avatar: "https://via.placeholder.com/150",
-            date: "2021-01-01",
-        }, {
-            id: 2,
-            content: "This is another comment",
-            author: "John Doe",
-            avatar: "https://via.placeholder.com/140",
-            date: "2021-01-02",
-        }]);
+            date: new Date().toISOString().slice(0, 10)
+        };
+        setComments([...comments, newCommentObj]);
+        setNewComment("");
+    }
 
 
     return (
@@ -30,13 +36,26 @@ function CommentSection() {
                 <FontAwesomeIcon className={cx('icon')} icon={faCommentAlt} /><h1>Comment ({comments.length})</h1>
             </div>
             <div className={cx('comment-body')}>
-                <textarea className={cx('comment-input')} placeholder="Write a comment..."></textarea>
-                <button className={cx('comment-button')}>Comment</button>
+                <textarea
+                    className={cx('comment-input')}
+                    placeholder="Write a comment..."
+                    value={newComment}
+                    onChange={handleCommentChange}
+                >
+                </textarea>
+                <button
+                    className={cx('comment-button')}
+                    onClick={handlePostComment}
+                >Comment</button>
             </div>
             <div className={cx('comments-container')}>
-                {comments.map((comment) => (
-                    <Comments key={comment.id} comment={comment} />
-                ))}
+                {comments.length === 0 ? (
+                    <p>No comments yet</p>
+                ) : (
+                    comments.map((comment) => (
+                        <Comments key={comment.id} comment={comment} />
+                    ))
+                )}
             </div>
         </div>
     );

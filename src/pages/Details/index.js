@@ -128,13 +128,12 @@ function Details() {
                 <h1>Chapters</h1>
                 <ul>
                     {detailedManga.chapter.slice(0, displayedChapters).map((chapter, index) => (
-                        <Link key={index} className={cx('chapter')} to={`/${detailedManga.title}/Chapter/${chapter.chapterId}`}>
+                        <Link key={index} className={cx('chapter')} to={`/view`}>
                             <h2>{chapter.ChapterTitle}</h2>
                             <h2>20/04/2024</h2>
                         </Link>
                     ))}
                 </ul>
-
                 <div className={cx('showmore-btn')} onClick={handleShowMore}>
                     <h1>SHOW MORE</h1>
                 </div>
